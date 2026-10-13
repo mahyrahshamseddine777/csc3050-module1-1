@@ -2,21 +2,48 @@
 <html>
 <head>
     <title>Web Application idea</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header style="font-size: 40px; font-weight: bold;">
-        Project Proposal
+    <header>
+        <div class="navbar sticky">
+        <nav class="nav-left">
+            <b>Spotlight</b>
+            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">Services</a>
+        </nav>
+        <input type="text" placeholder="Search..." class="input-control border">
+        <nav class="nav-right">
+            <a href="" class="nav-link">Login</a>
+            <button class="btn white rounded-xl border">Register</button>
+        </nav>
+        </div>
     </header>
-    <nav>
-        <a href="">Main</a>
-        <a href="">About</a>
-        <a href="">Roadmap</a>
-    </nav>
-    <main style="margin-top: 10px;">
-        We are creating a social media site that includes booking services from vendors like hair, makeup, and other cosmetic things.
+    <main>
+        <section aria-labelledby="welcome-section" class="welcome text-center">
+            <h1>Welcome to Spotlight</h1>
+        </section>
+        <section aria-labelledby="info-section" class="info text-start">
+            <div class="">
+            <h4>Social media website for stylist</h4>
+            <img src="https://www.therapyhairstudio.com/wp-content/uploads/2022/09/choosing-best-professional-hair-stylist-scaled.jpg" class="img-responsive rounded-lg">
+            </div>
+        </section>
+        <section aria-labelledby="more-info-section" class="other-info text-end">
+            <div>
+            <h4>Grow your business</h4>
+            <img src="https://cdn.shopify.com/s/files/1/0013/3536/1603/files/Barber_Cutting_Man_s_Hair-min.jpg?v=1661358566" class="img-responsive rounded-lg">
+            </div>
+        </section>
     </main>
-    <footer style="margin-top: 10px;">
-        This is the bottom of the page
+    <footer>
+        <div>
+        &copy; Project
+        </div>
+        <nav>
+            <a href="ToS">Terms of Services</a>
+        </nav>
     </footer>
 </body>
 </html>
