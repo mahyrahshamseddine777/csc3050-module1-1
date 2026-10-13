@@ -48,12 +48,12 @@ const services [
 //Finds the HTML element with the id "service-list." This is where the service card will be displayed
 const serviceList = document.querySelector("#service-list");
 //function that displays the hair services on the webpage
-const displayServices = () => {
+const displayServices = (searchServicesDisplay) => {
 
   // map() goes through each service in the array and creates html for each service
-    serviceList.innerHTML = services
+    serviceList.innerHTML = searchServicesDisplay
         .map(service => {
-            return `
+            return 
                 <article class="service-card">
                     <h3>${service.name}</h3>
                     <p>${service.category}</p>
